@@ -76,6 +76,10 @@ readProduction <- function(source_folder = NULL) {
 
   production <- droplevels(production[production$element %in% elements, ])
 
+  # Rice fix for IMPACT
+  production$value[production$item == "Rice"] <-
+    production$value[production$item == "Rice"] * 0.66
+
   # Return data
   return(production)
 }
