@@ -1,6 +1,6 @@
 Package: EFFORT
 Type: Package
-Title: Emission Factors FOR IMPACT
+Title: Emission Factors For IMPACT
 Version: 1.0.0
 Authors@R: c(
     person("Abhijeet", "Mishra", , "A.Mishra@cgiar.org", role = c("aut", "cre"))
