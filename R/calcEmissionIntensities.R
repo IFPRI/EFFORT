@@ -193,5 +193,9 @@ calcEmissionIntensities <- function(source_folder = NULL) {
   ef_db <- rbind(ef_crops, ef_livestock)
   names(ef_db)[names(ef_db) %in% "year"] <- "yrs"
 
+  # Bugfix for India
+  ef_db$value.EI[ef_db$j == "jbeef" & ef_db$cty == "IND"] <-
+    ef_db$value.EI[ef_db$j == "jbeef" & ef_db$cty == "IND"] * 1.5
+
   return(ef_db)
 }
