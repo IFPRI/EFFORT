@@ -8,7 +8,7 @@ calcImpactEmissions(
   gdx = NULL,
   source_folder = NULL,
   ef_db = NULL,
-  efficiency_improvement = 0.05
+  efficiency_improvement = 0.02
 )
 }
 \arguments{
@@ -24,7 +24,7 @@ function and feed the output of that function in "ef_db" parameter of this
 function.}
 
 \item{efficiency_improvement}{Improvement in Emission intensities annually
-(defaults to 5 percent i.e., 0.05)}
+(defaults to 2 percent i.e., 0.02)}
 }
 \value{
 Emissions from an IMPACT run
